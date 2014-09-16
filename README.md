@@ -9,6 +9,6 @@ want to do a one time correction.
 ```
 cd ~/$JAVA_PROJECT_ROOT
 
-find * | grep \\.java$ | xargs -IXX /Users/kaz/tmp/tabs2spaces/tabs2spaces.pl XX
+find * | grep \\.java$ | xargs -IXX $PATH_TO_SCRIPT/tabs2spaces.pl XX
 find * | grep \\.java+$ | xargs -IXX bash -c 'Z=XX; mv $Z ${Z:0:$((${#Z}-1))}'
 ```
